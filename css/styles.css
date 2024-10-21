@@ -21,52 +21,42 @@
   --bs-green: #198754;
   --bs-teal: #20c997;
   --bs-cyan: #0dcaf0;
-  --bs-black: #000;
+  --bs-black: #ff93ce;
   --bs-white: #fff;
-  --bs-gray: #6c757d;
-  --bs-gray-dark: #343a40;
-  --bs-gray-100: #f8f9fa;
-  --bs-gray-200: #e9ecef;
-  --bs-gray-300: #dee2e6;
-  --bs-gray-400: #ced4da;
-  --bs-gray-500: #adb5bd;
-  --bs-gray-600: #6c757d;
-  --bs-gray-700: #495057;
-  --bs-gray-800: #343a40;
-  --bs-gray-900: #212529;
-  --bs-primary: #0d6efd;
-  --bs-secondary: #6c757d;
+  --bs-gray: #e98fc3;
+  --bs-gray-dark: #ffc1db;
+  --bs-secondary: #d67294;
   --bs-success: #198754;
   --bs-info: #0dcaf0;
   --bs-warning: #ffc107;
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
-  --bs-dark: #212529;
+  --bs-dark: #fd639e;
   --bs-primary-rgb: 13, 110, 253;
-  --bs-secondary-rgb: 108, 117, 125;
+  --bs-secondary-rgb: 255, 193, 219;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
   --bs-warning-rgb: 255, 193, 7;
   --bs-danger-rgb: 220, 53, 69;
   --bs-light-rgb: 248, 249, 250;
-  --bs-dark-rgb: 33, 37, 41;
+  --bs-dark-rgb: 33, 37, 41; 
   --bs-white-rgb: 255, 255, 255;
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 33, 37, 41;
   --bs-body-bg-rgb: 255, 255, 255;
   --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+  --bs-gradient: linear-gradient(180deg, rgb(255, 255, 255), rgba(255, 255, 255, 0));
   --bs-body-font-family: var(--bs-font-sans-serif);
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
   --bs-body-color: #212529;
-  --bs-body-bg: #fff;
+  --bs-body-bg: #ffffff;
   --bs-border-width: 1px;
   --bs-border-style: solid;
-  --bs-border-color: #dee2e6;
-  --bs-border-color-translucent: rgba(0, 0, 0, 0.175);
+  --bs-border-color: #ff4090;
+  --bs-border-color-translucent: rgb(255, 131, 193);
   --bs-border-radius: 0.375rem;
   --bs-border-radius-sm: 0.25rem;
   --bs-border-radius-lg: 0.5rem;
@@ -76,7 +66,7 @@
   --bs-link-color: #0d6efd;
   --bs-link-hover-color: #0a58ca;
   --bs-code-color: #d63384;
-  --bs-highlight-bg: #fff3cd;
+  --bs-highlight-bg: #ffcdf4;
 }
 
 *,
@@ -8298,61 +8288,9 @@ textarea.form-control-lg {
   visibility: hidden !important;
 }
 
-  /* Otros colores*/
-
-/* Cambiar el fondo de la navbar */
-.navbar {
-  background-color: rgba(214, 51, 132, 1); /* Rosa fuerte */
-}
-
-/* Cambiar el fondo del footer */
-footer {
-  background-color: rgba(232, 62, 140, 1); /* Otro tono de rosa */
-}
-
-/* Cambiar el color de los enlaces en la navbar */
-.navbar .nav-link {
-  color: rgba(255, 255, 255, 1); /* Texto blanco */
-}
-
-.navbar .nav-link:hover {
-  color: rgba(248, 215, 218, 1); /* Rosa claro cuando se pasa el ratón */
-}
-
-/* Cambiar el color de fondo del botón */
-.btn-primary {
-  background-color: rgba(214, 51, 132, 1); /* Rosa fuerte */
-  border-color: rgba(214, 51, 132, 1);
-}
-
-.btn-primary:hover {
-  background-color: rgba(200, 35, 115, 1); /* Un tono más oscuro al pasar el ratón */
-  border-color: rgba(200, 35, 115, 1);
-}
-
-/* Cambiar el fondo de la tarjeta "Call to Action" */
-.card.bg-secondary {
-  background-color: rgba(248, 215, 218, 1); /* Rosa claro */
-}
-
-/* Cambiar el color de fondo del contenedor principal */
-body {
-  background-color: rgba(255, 240, 245, 1); /* Fondo general en un tono muy suave de rosa */
-  color: rgba(51, 51, 51, 1); /* Texto en gris oscuro para legibilidad */
-}
-
-/* Cambiar los colores del footer y de los iconos */
-footer p {
-  color: rgba(255, 255, 255, 1);
-}
 
 footer .text-center a img {
   filter: invert(1); /* Invertir colores para hacer los iconos blancos */
-}
-
-/* Tarjetas de los proyectos */
-.card {
-  border-color: rgba(232, 62, 140, 1); /* Color del borde de las tarjetas */
 }
 
 .card-title {
