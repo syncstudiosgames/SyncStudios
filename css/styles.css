@@ -10823,4 +10823,66 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
+
+  /* Otros colores*/
+
+/* Cambiar el fondo de la navbar */
+.navbar {
+  background-color: rgba(214, 51, 132, 1); /* Rosa fuerte */
+}
+
+/* Cambiar el fondo del footer */
+footer {
+  background-color: rgba(232, 62, 140, 1); /* Otro tono de rosa */
+}
+
+/* Cambiar el color de los enlaces en la navbar */
+.navbar .nav-link {
+  color: rgba(255, 255, 255, 1); /* Texto blanco */
+}
+
+.navbar .nav-link:hover {
+  color: rgba(248, 215, 218, 1); /* Rosa claro cuando se pasa el ratón */
+}
+
+/* Cambiar el color de fondo del botón */
+.btn-primary {
+  background-color: rgba(214, 51, 132, 1); /* Rosa fuerte */
+  border-color: rgba(214, 51, 132, 1);
+}
+
+.btn-primary:hover {
+  background-color: rgba(200, 35, 115, 1); /* Un tono más oscuro al pasar el ratón */
+  border-color: rgba(200, 35, 115, 1);
+}
+
+/* Cambiar el fondo de la tarjeta "Call to Action" */
+.card.bg-secondary {
+  background-color: rgba(248, 215, 218, 1); /* Rosa claro */
+}
+
+/* Cambiar el color de fondo del contenedor principal */
+body {
+  background-color: rgba(255, 240, 245, 1); /* Fondo general en un tono muy suave de rosa */
+  color: rgba(51, 51, 51, 1); /* Texto en gris oscuro para legibilidad */
+}
+
+/* Cambiar los colores del footer y de los iconos */
+footer p {
+  color: rgba(255, 255, 255, 1);
+}
+
+footer .text-center a img {
+  filter: invert(1); /* Invertir colores para hacer los iconos blancos */
+}
+
+/* Tarjetas de los proyectos */
+.card {
+  border-color: rgba(232, 62, 140, 1); /* Color del borde de las tarjetas */
+}
+
+.card-title {
+  color: rgba(214, 51, 132, 1);
+}
+
 }
