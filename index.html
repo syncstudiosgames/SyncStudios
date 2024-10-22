@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -10,7 +11,66 @@
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
+    <style>
+        body {
+            background-color: #ffe6f2; /* Fondo rosado atractivo */
+            color: #333333; /* Color de texto oscuro para contraste */
+            font-family: 'Arial', sans-serif;
+        }
+
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+            position: relative;
+        }
+
+        .hero h1 {
+            font-size: 5rem;
+            font-weight: bold;
+            animation: fadeInUp 2s ease-in-out;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            max-width: 600px;
+            margin: 20px auto;
+            animation: fadeInUp 2s ease-in-out 0.5s forwards;
+        }
+
+        .projects {
+            margin-top: 50px;
+        }
+
+        .card {
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        footer {
+            margin-top: 50px;
+        }
+    </style>
 </head>
+
 <body>
     <!-- Responsive navbar-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -27,21 +87,17 @@
             </div>
         </div>
     </nav>
+
     <!-- Page Content-->
     <div class="container px-4 px-lg-5">
-        <!-- Heading Row-->
-        <div class="row gx-4 gx-lg-5 align-items-center my-5">
-            <div class="col-lg-7">
-                <img class="img-fluid rounded mb-4 mb-lg-0" src="assets/teamImage.png" alt="Imagen del equipo" />
-            </div>            
-            <div class="col-lg-5">
-                <h1 class="font-weight-light">Sync Studios</h1>
-                <p>Somos una empresa desarrolladora de videojuegos, apasionada por crear experiencias interactivas y emocionantes para jugadores de todo el mundo.</p>
-            </div>
+        <!-- Hero Section-->
+        <div class="hero">
+            <h1>Sync Studios</h1>
+            <p>Somos una empresa desarrolladora de videojuegos, apasionada por crear experiencias interactivas y emocionantes para jugadores de todo el mundo.</p>
         </div>
 
         <!-- Projects Section-->
-        <div class="row gx-4 gx-lg-5">
+        <div class="projects row gx-4 gx-lg-5">
             <!-- Project 1: Trivial -->
             <div class="col-md-6 mb-4">
                 <div class="card h-100 shadow-lg">
@@ -67,15 +123,8 @@
                 </div>
             </div>
         </div>
-
-        <!-- Call to Action-->
-        <div class="card text-white bg-secondary my-5 py-4 text-center">
-            <div class="card-body">
-                <p class="text-white m-0">"Creamos experiencias inmersivas que transforman la manera de jugar y contar historias."</p>
-            </div>
-        </div>
     </div>
-    
+
     <!-- Footer-->
     <footer class="py-5 bg-dark">
         <div class="container px-4 px-lg-5">
@@ -101,4 +150,5 @@
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
 </body>
+
 </html>
