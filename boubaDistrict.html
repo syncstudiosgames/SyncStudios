@@ -3,11 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bouba District - Portfolio</title>
+    <title>Bouba District</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Tu propio CSS -->
     <link rel="stylesheet" href="styles.css">
+
+    <style>
+        /* Estilos personalizados adicionales */
+        .hero {
+            position: relative;
+            height: 50vh;
+            background-color: #212529d7; 
+            color: white;
+        }
+
+        .hero .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Filtro oscuro para resaltar el texto */
+            z-index: 1;
+        }
+
+        .hero .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+    </style>
 </head>
 <body>
     <!-- Navbar -->
@@ -40,14 +65,13 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero text-center text-light d-flex align-items-center justify-content-center" id="hero" style="background-image: url('assets/boubaDistrict/Caratula.jpg'); background-size: contain; background-position: center; background-repeat: no-repeat; height: 100vh;">    </section>
-
-
-    <section class="py-5">
-        <div class="container text-center">            
-            <h1 class="display-4">Bienvenido a Bouba District</h1>
-            <p class="lead">Un juego que combina acción, ritmo y diversión sin igual.</p>
+    <section class="hero text-center text-light d-flex align-items-center justify-content-center" id="hero">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <h1 class="display-1">Bouba District</h1>
+            <p class="lead">La boyband que salva al mundo con el poder de la música.</p>
             <a href="#about" class="btn btn-primary btn-lg">Descubre más</a>
+            <a href="index.html" class="btn btn-primary btn-lg">Volver al inicio</a>
         </div>
     </section>
 
@@ -56,6 +80,8 @@
         <div class="container text-center">
             <h2 class="display-4">Introducción</h2>
             <p class="lead">Bouba District es un juego competitivo musical que combina mecánicas de acción y ritmo. Enfréntate a hordas de criaturas adorables pero peligrosas siguiendo el ritmo de la música y realizando secuencias de teclas precisas.</p>
+            <!-- Imagen de la carátula debajo del texto -->
+            <img src="assets/boubaDistrict/Caratula.jpg" class="img-fluid rounded mt-4" alt="Carátula del juego">
         </div>
     </section>
 
@@ -145,15 +171,15 @@
     <section class="py-5 bg-light" id="characters">
         <div class="container text-center">
             <h2 class="display-4">Personajes Principales</h2>
-            <p class="lead">Conoce a los héroes que enfrentarán a los Boubas en su aventura épica.</p>
+            <p class="lead">Conoce a los miembros de la boyband que lucha contra la plaga de los Boubas.</p>
             <div class="row justify-content-center">
                 <!-- Kiki Card -->
                 <div class="col-md-4 mb-4">
                     <div class="card h-100 shadow-lg">
                         <img src="assets/boubaDistrict/kiki.png" class="card-img-top img-fluid" alt="Kiki">
                         <div class="card-body">
-                            <h3 class="card-title">Kiki</h3>
-                            <p class="card-text">Kiki es un chico rebelde y despreocupado que siempre lleva el estilo en cada paso. Con su camiseta de tirantes blanca y el logo de un rayo rojo brillante, refleja su actitud enérgica y electrizante. Lleva unos pantalones anchos que le permiten moverse con agilidad, perfecto para enfrentar a los Boubas en sus intensos duelos de ritmo.</p>
+                            <h3 class="card-title">Kiki - El Vocalista</h3>
+                            <p class="card-text">Kiki es el alma de la banda, con una voz capaz de levantar multitudes. Es un líder natural, carismático y lleno de energía. Con su actitud desafiante y su estilo audaz, Kiki usa su voz para derrotar a los Boubas en intensos duelos musicales.</p>
                         </div>
                     </div>
                 </div>
@@ -162,8 +188,8 @@
                     <div class="card h-100 shadow-lg">
                         <img src="assets/boubaDistrict/kike.png" class="card-img-top img-fluid" alt="Kike">
                         <div class="card-body">
-                            <h3 class="card-title">Kike</h3>
-                            <p class="card-text">Kike es una versión alternativa de Kiki, que lleva un atuendo más relajado, un pelo largo y rubio y una camiseta verde con el símbolo de la paz. Aunque comparte la misma energía que Kiki, Kike tiene un estilo propio, preferido por aquellos jugadores que buscan un look más pacífico.</p>
+                            <h3 class="card-title">Kike - El Guitarrista</h3>
+                            <p class="card-text">Kike es el corazón rítmico de la banda, con un talento impresionante para la guitarra. Sus melodías son tan potentes que logran aturdir a los Boubas, dándole a la banda la ventaja en la batalla. Es un espíritu libre, siempre dispuesto a improvisar y darle un toque especial a cada actuación.</p>
                         </div>
                     </div>
                 </div>
@@ -172,14 +198,15 @@
                     <div class="card h-100 shadow-lg">
                         <img src="assets/boubaDistrict/kiko.png" class="card-img-top img-fluid" alt="Kiko">
                         <div class="card-body">
-                            <h3 class="card-title">Kiko</h3>
-                            <p class="card-text">Kiko es la skin más extrovertida y divertida. Lleva una camiseta de tirantes rockera, representando su conexión total con la música. Su pelo alborotado y su sonrisa traviesa lo hacen un personaje llamativo y divertido.</p>
+                            <h3 class="card-title">Kiko - El Baterista</h3>
+                            <p class="card-text">Kiko es el motor de la banda, con un ritmo tan poderoso que hace vibrar el suelo. Su batería es más que un instrumento; es un arma contra la plaga de Boubas. Siempre está listo para marcar el tempo en la batalla, manteniendo a la banda unida en los momentos más difíciles.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
 
 
     <!-- Gallery Section -->
